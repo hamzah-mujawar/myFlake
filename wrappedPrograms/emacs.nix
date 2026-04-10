@@ -49,7 +49,9 @@
       tree-sitter-typescript
       tree-sitter-vim
       tree-sitter-yaml
-      tree-sitter-zig ]; custom-emacs =
+      tree-sitter-zig ];
+
+      custom-emacs =
       with newpkgs;
       ((emacsPackagesFor (emacs30-pgtk.override { withNativeCompilation = true; })).emacsWithPackages (epkgs: with epkgs; [
         jinx

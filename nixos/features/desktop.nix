@@ -5,7 +5,6 @@
   in {
     imports = [
       self.nixosModules.pipewire
-
     ];
 
     fonts.packages = with pkgs; [
@@ -69,6 +68,9 @@
 	  dedicatedServer.openFirewall = true; # Open ports for Source Dedicated Server hosting
     };
 
-    environment.systemPackages = [ zen ];
+    environment.systemPackages = [
+      zen
+      pkgs.ccls # C++ 
+    ];
   };
 }

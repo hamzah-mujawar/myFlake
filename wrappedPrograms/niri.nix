@@ -28,6 +28,11 @@
 						    xcursor-theme "Adwaita"
 						    xcursor-size 15
 						}
+						window-rule{
+						draw-border-with-background false
+						match app-id="zenbrowser"
+						// opacity 0.95 
+						}
 		      '';
 
 
