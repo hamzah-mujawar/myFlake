@@ -70,7 +70,7 @@
     environment.systemPackages = [
       zen
       pkgs.ccls # C++ 
-      pkgs.texliveSmall
+      pkgs.texliveMedium # Latex for org mode C++ notes
     ];
   };
 }
