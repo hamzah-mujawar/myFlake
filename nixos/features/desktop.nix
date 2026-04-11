@@ -22,6 +22,7 @@
       monospace = ["Miracode"];
     };
 
+    environment.variables.XCURSOR_SIZE = "15";
     # Set your time zone.
 
     time.timeZone = "Asia/Dubai";

@@ -50,8 +50,6 @@
 	    ];
 	  };
 
-	  # Install firefox.
-	  programs.firefox.enable = true;
 
 	  # List packages installed in system profile. To search, run:
 	  # $ nix search wget
@@ -65,7 +63,6 @@
 	     gnat
 	  ];
 
-	  environment.variables.XCURSOR_SIZE = "15";
 
 	  # Some programs need SUID wrappers, can be configured further or are
 	  # started in user sessions.
