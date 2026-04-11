@@ -13,6 +13,7 @@
 		self.nixosModules.desktop
 		self.nixosModules.niri
 		self.nixosModules.emacs
+		self.nixosModules.intelGraphics
 	    ];
 	  
 	  # Bootloader.
