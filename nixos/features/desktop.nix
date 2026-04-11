@@ -70,6 +70,7 @@
     environment.systemPackages = [
       zen
       pkgs.ccls # C++ 
+      pkgs.texliveSmall
     ];
   };
 }
