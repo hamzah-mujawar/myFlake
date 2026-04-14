@@ -14,6 +14,7 @@
 		self.nixosModules.niri
 		self.nixosModules.emacs
 		self.nixosModules.intelGraphics
+		self.nixosModules.tmux
 	    ];
 	  
 	  # Bootloader.
