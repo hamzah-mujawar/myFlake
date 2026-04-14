@@ -4,7 +4,7 @@
       inherit pkgs;
       package = pkgs.nh;
       env = {
-        "NH_FLAKE" = "$HOME/myFlake";
+        "NH_FLAKE" = "/home/hamzah/myFlake";
       };
     };
   };
