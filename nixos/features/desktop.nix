@@ -51,16 +51,13 @@
       bluetooth.powerOnBoot = true;
     };
 
-    services.greetd = {
+    services.displayManager.ly = {
     	enable = true;
 	settings = {
-		default_session = {
-			command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd niri";
-			user = "hamzah";
-			};
-		};
+		animation = "gameoflife";
+	};
     };
-    
+
     programs.gamescope.enable = true;
 
     programs.steam = {
