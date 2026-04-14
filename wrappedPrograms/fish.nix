@@ -20,6 +20,8 @@
         fish_vi_key_bindings
 
 	bind p fish_clipboard_paste
+	bind -s --preset -M visual -m default Y "fish_clipboard_copy; commandline -f end-selection repaint-mode"
+
         ${lib.getExe pkgs.zoxide} init fish | source
 
         if type -q direnv
