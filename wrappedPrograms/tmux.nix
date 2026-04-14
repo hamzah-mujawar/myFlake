@@ -14,9 +14,9 @@
 			shell = "${self'.packages.environment}/bin/fish";
 			prefix = "C-Space";
 			modeKeys = "vi";
-			plugins = { 
-				'christoomey/vim-tmux-navigator'
-			};
+			plugins = [ 
+				pkgs.tmuxPlugins.vim-tmux-navigator
+			];
 			
         	};
 	};
