@@ -9,9 +9,9 @@
 		packages.myHelix = inputs.wrapper-modules.wrappers.tmux.wrap {
 			inherit pkgs;
 			languages = {
-				name = "c++"
-				auto-format = false
-				language-server = { command = "ccls", args = [] }
+				name = "c++";
+				auto-format = false;
+				language-server = { command = "ccls", args = [] };
 			};
 		};
 	};
