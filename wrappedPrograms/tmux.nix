@@ -11,7 +11,7 @@
 			sourceSensible = true;
 			terminal = "kitty";
 			vimVisualKeys = true;
-			shell = "${pkgs.fish}/bin/fish";
+			shell = "${self'.packages.environment}/bin/fish";
 			prefix = "C-Space";
 			modeKeys = "vi";
         	};
