@@ -7,6 +7,7 @@
 	};
 	perSystem = { pkgs, lib, self', ... }:{
 		packages.myTmux = inputs.wrapper-modules.wrappers.tmux.wrap {
+			inherit pkgs;
 			sourceSensible = true;
 			terminal = "kitty";
 			vimVisualKeys = true;
