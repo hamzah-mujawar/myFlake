@@ -14,7 +14,7 @@
 					auto-format = false;
 					language-server = { command = "ccls"; args = []; };
 				}
-			]
+			];
 		};
 	};
 }
