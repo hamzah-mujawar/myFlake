@@ -18,7 +18,8 @@
 
         set fish_greeting
         fish_vi_key_bindings
-	
+
+	bind p fish_clipboard_paste
         ${lib.getExe pkgs.zoxide} init fish | source
 
         if type -q direnv
