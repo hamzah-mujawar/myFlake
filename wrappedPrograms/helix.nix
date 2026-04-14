@@ -11,7 +11,7 @@
 			languages = {
 				"name" = "c++";
 				"auto-format" = false;
-				"language-server" = "{ command = "ccls", args = [] };"
+				"language-server" = { command = "ccls", args = [] };
 			};
 		};
 	};
