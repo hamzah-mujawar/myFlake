@@ -8,11 +8,13 @@
 	perSystem = { pkgs, lib, self', ... }: {
 		packages.myHelix = inputs.wrapper-modules.wrappers.tmux.wrap {
 			inherit pkgs;
-			languages = {
-				"name" = "c++";
-				"auto-format" = false;
-				"language-server" = { command = "ccls", args = [] };
-			};
+			languages =  [
+				{
+					name = "c++";
+					auto-format = false;
+					language-server = { command = "ccls", args = [] };
+				}
+			]
 		};
 	};
 }
