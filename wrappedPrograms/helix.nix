@@ -1,9 +1,6 @@
 { self, inputs, ... }:{
 	flake.nixosModules.helix = { pkgs, lib, ... }: {
-		programs.helix = {
-			enable = true;
-			package = self.packages.${pkgs.stdenv.hostPlatform.system}.myHelix;
-		};
+		environment.systemPackages = [ self.packages.${pkgs.stdenv.hostPlatform.system}.myHelix ];
 	};
 	perSystem = { pkgs, lib, self', ... }: {
 		packages.myHelix = inputs.wrapper-modules.wrappers.tmux.wrap {
