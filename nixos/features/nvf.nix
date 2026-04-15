@@ -5,6 +5,7 @@
 	    enable = true;
 	 
 	    settings  = {
+	      vim.utility.smart-splits.enable = true;
 	      vim.theme = {
 		enable = true;
 		name = "gruvbox";
@@ -57,7 +58,6 @@
 		mappings.resume = "fr";
 		mappings.treesitter = "fs";
 		setupOpts.defaults.color_devicons = true;
-	 
 	      };
 	   };
 	};
