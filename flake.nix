@@ -23,6 +23,7 @@
     url = "github:nix-community/emacs-overlay";
     inputs.nixpkgs.follows = "nixpkgs";
     };
+   nvf.url = "github:notashelf/nvf"; 
    };
 
   # Import all .nix files from current directory except flake.nix recursively

@@ -16,6 +16,7 @@
 		self.nixosModules.intelGraphics
 		self.nixosModules.tmux
 		self.nixosModules.helix
+		self.nixosModules.nvf
 	    ];
 	  
 	  # Bootloader.
