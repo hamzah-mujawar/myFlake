@@ -1,4 +1,8 @@
-{self, inputs, ...}: {
+{
+  self,
+  inputs,
+  ...
+}: {
   flake.nixosModules.desktop = {pkgs, ...}: let
     selfpkgs = self.packages."${pkgs.system}";
     zen = inputs.zen-browser.packages."${pkgs.system}".twilight;
@@ -52,23 +56,23 @@
     };
 
     services.displayManager.ly = {
-    	enable = true;
-	settings = {
-		animation = "gameoflife";
-	};
+      enable = true;
+      settings = {
+        animation = "gameoflife";
+      };
     };
 
     programs.gamescope.enable = true;
 
     programs.steam = {
-	  enable = true; # Master switch, already covered in installation
-	  remotePlay.openFirewall = true;  # Open ports in the firewall for Steam Remote Play
-	  dedicatedServer.openFirewall = true; # Open ports for Source Dedicated Server hosting
+      enable = true; # Master switch, already covered in installation
+      remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+      dedicatedServer.openFirewall = true; # Open ports for Source Dedicated Server hosting
     };
 
     environment.systemPackages = [
       zen
-      pkgs.ccls # C++ 
+      pkgs.ccls # C++
       pkgs.texliveMedium # Latex for org mode C++ notes
     ];
   };

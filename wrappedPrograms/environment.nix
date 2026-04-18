@@ -39,8 +39,6 @@
         #wrapped
         self'.packages.git
 
-        #fish plugins
-        pkgs.fishPlugins.colored-man-pages
       ];
     };
   };

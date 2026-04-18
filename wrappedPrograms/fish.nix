@@ -34,6 +34,8 @@
       package = pkgs.fish;
       runtimeInputs = [
         pkgs.zoxide
+        #fish plugins
+        pkgs.fishPlugins.colored-man-pages
       ];
       flags = {
         "-C" = "source ${fishConf}";
