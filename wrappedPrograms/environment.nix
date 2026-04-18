@@ -38,7 +38,7 @@
 
         #wrapped
         self'.packages.git
-
+        self'.packages.bat
       ];
     };
   };
