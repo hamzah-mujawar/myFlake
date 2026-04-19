@@ -41,7 +41,6 @@
         
         #C++
         pkgs.ccls
-        pkgs.boost
         pkgs.gdb
 	    pkgs.gnat
       ];
