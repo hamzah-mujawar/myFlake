@@ -8,7 +8,11 @@
     lib,
     ...
   }: {
-    environment.systemPackages = [self.packages.${pkgs.stdenv.hostPlatform.system}.custom-emacs];
+    environment.systemPackages = [
+      self.packages.${pkgs.stdenv.hostPlatform.system}.custom-emacs
+      pkgs.ccls # C++
+      pkgs.texliveMedium # Latex for org mode C++ notes
+    ];
     services.emacs.enable = true;
     services.emacs.package = self.packages.${pkgs.stdenv.hostPlatform.system}.custom-emacs;
   };

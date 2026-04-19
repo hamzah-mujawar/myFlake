@@ -63,7 +63,6 @@
 	     git
 	     hunspell
 	     hunspellDicts.en_GB-ise
-	     gnat
 	  ];
 
 

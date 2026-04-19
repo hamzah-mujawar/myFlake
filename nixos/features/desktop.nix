@@ -70,10 +70,9 @@
       dedicatedServer.openFirewall = true; # Open ports for Source Dedicated Server hosting
     };
 
+    # zen browser
     environment.systemPackages = [
       zen
-      pkgs.ccls # C++
-      pkgs.texliveMedium # Latex for org mode C++ notes
     ];
   };
 }

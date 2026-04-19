@@ -34,11 +34,16 @@
         pkgs.ripgrep
         pkgs.fastfetch
         pkgs.wl-clipboard
-        pkgs.gdb
 
         #wrapped
         self'.packages.git
         self'.packages.bat
+        
+        #C++
+        pkgs.ccls
+        pkgs.boost
+        pkgs.gdb
+	    pkgs.gnat
       ];
     };
   };
