@@ -73,7 +73,6 @@
           nix.enable = true;
           clang.enable = true;
           markdown.enable = true;
-          markdown.enableTreesitter = true;
 
           markdown.extensions.markview-nvim.enable = true;
           markdown.extensions.render-markdown-nvim.enable = true;
