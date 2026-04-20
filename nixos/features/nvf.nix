@@ -67,6 +67,10 @@
         };
         vim.statusline.lualine.enable = true;
         vim.autocomplete.nvim-cmp.enable = true;
+        vim.visuals = {
+            nvim-web-devicons.enable = true;
+            rainbow-delimiters.enable = true;
+        };
         vim.languages = {
           enableLSP = true;
           enableTreesitter = true;
@@ -75,7 +79,14 @@
           clang.enable = true;
           markdown.enable = true;
 
-          markdown.extensions.markview-nvim.enable = true;
+          markdown.extensions.markview-nvim = {
+                enable = true;
+                setupOpts = {
+                            preview = {
+                                icon_provider = "devicons";
+                            };
+                };
+          };
         };
       };
     };
