@@ -1,6 +1,11 @@
 {inputs, ...}: {
   flake.nixosModules.neovim = {pkgs, ...}: {
     imports = [inputs.nvf.nixosModules.nvf];
+    # dependencies for nvf
+    environment.systemPackages = [
+        pkgs.marksman
+        pkgs.markdownlint-cli2
+    ];
     programs.nvf = {
       enable = true;
 
@@ -67,6 +72,11 @@
 
           nix.enable = true;
           clang.enable = true;
+          markdown.enable = true;
+          markdown.enableTreesitter = true;
+
+          markdown.extensions.markview-nvim.enable = true;
+          markdown.extensions.render-markdown-nvim.enable = true;
         };
       };
     };
