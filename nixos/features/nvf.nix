@@ -76,7 +76,6 @@
           markdown.enable = true;
 
           markdown.extensions.markview-nvim.enable = true;
-          markdown.extensions.render-markdown-nvim.enable = true;
         };
       };
     };
