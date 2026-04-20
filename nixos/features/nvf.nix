@@ -10,7 +10,13 @@
       enable = true;
 
       settings = {
-        vim.utility.smart-splits.enable = true;
+        vim.utility = {
+                smart-splits.enable = true;
+                oil-nvim = {
+                        enable = true;
+                        gitStatus = true;
+                };
+        };
         vim.theme = {
           enable = true;
           name = "gruvbox";
