@@ -29,6 +29,7 @@
           smartindent = true;
           tabstop = 4;
           shiftwidth = 4;
+          wrap = false;
         };
         vim.startPlugins = [
           "gruvbox"
