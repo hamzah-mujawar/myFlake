@@ -14,7 +14,7 @@
                 smart-splits.enable = true;
                 oil-nvim = {
                         enable = true;
-                        gitStatus = true;
+                        gitStatus.enable = true;
                 };
         };
         vim.theme = {
