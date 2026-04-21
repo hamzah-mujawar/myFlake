@@ -57,7 +57,7 @@
         color15 = self.theme.base03;
 
 	dynamic_background_opacity = true;
-	background_opacity = "0.8";
+	background_opacity = "0.95";
 	background_blur = 10;
 	window_padding_width = 10;	
 
