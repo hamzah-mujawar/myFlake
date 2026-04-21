@@ -66,8 +66,7 @@
       wget
       adwaita-icon-theme
       git
-      hunspell
-      hunspellDicts.en_GB-ise
+      transmission
     ];
 
     # Some programs need SUID wrappers, can be configured further or are

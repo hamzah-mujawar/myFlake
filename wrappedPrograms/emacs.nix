@@ -12,6 +12,9 @@
       self.packages.${pkgs.stdenv.hostPlatform.system}.custom-emacs
       pkgs.ccls # C++
       pkgs.texliveMedium # Latex for org mode C++ notes
+      # dependencies for jinx 
+      pkgs.hunspell
+      pkgs.hunspellDicts.en_GB-ise
     ];
     services.emacs.enable = true;
     services.emacs.package = self.packages.${pkgs.stdenv.hostPlatform.system}.custom-emacs;
