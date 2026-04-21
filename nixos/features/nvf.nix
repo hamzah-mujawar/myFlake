@@ -99,6 +99,9 @@
             languages = [ "en_gb" ];
             ignoredFiletypes = [ "nix" "oil" "cpp" ];
         };
+        vim.navigation = {
+            harpoon.enable = true;
+        };
       };
     };
   };
