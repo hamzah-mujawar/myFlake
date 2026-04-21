@@ -16,6 +16,7 @@
 			modeKeys = "vi";
 			plugins = [ 
 				pkgs.tmuxPlugins.vim-tmux-navigator
+                pkgs.tmuxPlugins.resurrect
 			];
 			
         	};
