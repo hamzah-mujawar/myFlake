@@ -94,6 +94,11 @@
                 };
           };
         };
+        vim.spellcheck = {
+            enable = true;
+            languages = [ "en_gb" ];
+            programmingWordlist.enable = true;
+        };
       };
     };
   };
