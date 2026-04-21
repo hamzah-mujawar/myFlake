@@ -32,9 +32,6 @@
 							geometry-corner-radius 10
 							clip-to-geometry true
 							draw-border-with-background false
-                            background-effect {
-                                blur true
-                            }
 						}
 		      '';
 
