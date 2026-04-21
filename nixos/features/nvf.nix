@@ -94,13 +94,14 @@
                 };
           };
         };
-        vim.spellcheck = {
-            enable = true;
-            languages = [ "en_gb" ];
-            ignoredFiletypes = [ "nix" "oil" "cpp" ];
-        };
         vim.navigation = {
-            harpoon.enable = true;
+            harpoon = {
+                enable = true;
+                mappings.file1 = "<C-1>";
+                mappings.file2 = "<C-2>";
+                mappings.file3 = "<C-3>";
+                mappings.file4 = "<C-4>";
+            };
         };
       };
     };
