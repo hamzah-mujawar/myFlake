@@ -18,6 +18,9 @@
 				pkgs.tmuxPlugins.vim-tmux-navigator
                 pkgs.tmuxPlugins.resurrect
 			];
+            configAfter = ''
+                        bind C-l send-keys 'C-l'   
+                '';
 			
         	};
 	};
