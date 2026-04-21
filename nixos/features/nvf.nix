@@ -3,19 +3,19 @@
     imports = [inputs.nvf.nixosModules.nvf];
     # dependencies for nvf
     environment.systemPackages = [
-        pkgs.marksman
-        pkgs.markdownlint-cli2
+      pkgs.marksman
+      pkgs.markdownlint-cli2
     ];
     programs.nvf = {
       enable = true;
 
       settings = {
         vim.utility = {
-                smart-splits.enable = true;
-                oil-nvim = {
-                        enable = true;
-                        gitStatus.enable = true;
-                };
+          smart-splits.enable = true;
+          oil-nvim = {
+            enable = true;
+            gitStatus.enable = true;
+          };
         };
         vim.theme = {
           enable = true;
@@ -73,16 +73,17 @@
         };
         vim.statusline.lualine.enable = true;
         vim.autocomplete.nvim-cmp = {
-            enable = true;
-            sources = [
-                { name = "nvim_lsp"; }
-                { name = "buffer"; }
-                { name = "path"; }    
-            ];
+          enable = true;
+          sources = {
+            buffer = "[Buffer]";
+            nvim_lsp = "[LSP]";
+            path = "[Path]";
+            treesitter = null; # Disable Tree-sitter completions
+          };
         };
         vim.visuals = {
-            nvim-web-devicons.enable = true;
-            rainbow-delimiters.enable = true;
+          nvim-web-devicons.enable = true;
+          rainbow-delimiters.enable = true;
         };
         vim.languages = {
           enableLSP = true;
@@ -93,27 +94,27 @@
           markdown.enable = true;
 
           markdown.extensions.markview-nvim = {
-                enable = true;
-                setupOpts = {
-                            preview = {
-                                icon_provider = "devicons";
-                            };
-                };
+            enable = true;
+            setupOpts = {
+              preview = {
+                icon_provider = "devicons";
+              };
+            };
           };
         };
         vim.navigation = {
-            harpoon = {
-                enable = true;
-                mappings.file1 = "<C-1>";
-                mappings.file2 = "<C-2>";
-                mappings.file3 = "<C-3>";
-                mappings.file4 = "<C-4>";
-            };
+          harpoon = {
+            enable = true;
+            mappings.file1 = "<C-1>";
+            mappings.file2 = "<C-2>";
+            mappings.file3 = "<C-3>";
+            mappings.file4 = "<C-4>";
+          };
         };
         vim.spellcheck = {
-            enable = true;
-            languages = [ "en_gb" ];
-            ignoredFiletypes = [ "nix" "oil" "cpp" ];
+          enable = true;
+          languages = ["en_gb"];
+          ignoredFiletypes = ["nix" "oil" "cpp"];
         };
       };
     };
