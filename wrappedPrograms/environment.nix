@@ -34,6 +34,7 @@
         pkgs.ripgrep
         pkgs.fastfetch
         pkgs.wl-clipboard
+        pkgs.nyaa  
 
         #wrapped
         self'.packages.git
