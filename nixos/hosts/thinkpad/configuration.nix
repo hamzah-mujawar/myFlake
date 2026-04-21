@@ -66,7 +66,7 @@
       wget
       adwaita-icon-theme
       git
-      transmission
+      qbittorrent
     ];
 
     # Some programs need SUID wrappers, can be configured further or are
