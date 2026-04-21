@@ -97,10 +97,10 @@
         vim.navigation = {
             harpoon = {
                 enable = true;
-                mappings.file1 = "C-1";
-                mappings.file2 = "C-2";
-                mappings.file3 = "C-3";
-                mappings.file4 = "C-4";
+                mappings.file1 = "<C-1>";
+                mappings.file2 = "<C-2>";
+                mappings.file3 = "<C-3>";
+                mappings.file4 = "<C-4>";
             };
         };
       };
