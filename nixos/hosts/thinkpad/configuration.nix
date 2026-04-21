@@ -25,6 +25,7 @@
       self.nixosModules.helix
       self.nixosModules.neovim
       self.nixosModules.mpv
+      self.nixosModules.vpn
     ];
 
     # Bootloader.
