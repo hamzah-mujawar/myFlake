@@ -78,7 +78,6 @@
             buffer = "[Buffer]";
             nvim_lsp = "[LSP]";
             path = "[Path]";
-            treesitter = null; # Disable Tree-sitter completions
           };
         };
         vim.visuals = {
