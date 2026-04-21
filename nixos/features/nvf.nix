@@ -72,7 +72,14 @@
           setupOpts.defaults.color_devicons = true;
         };
         vim.statusline.lualine.enable = true;
-        vim.autocomplete.nvim-cmp.enable = true;
+        vim.autocomplete.nvim-cmp = {
+            enable = true;
+            sources = [
+                { name = "nvim_lsp"; }
+                { name = "buffer"; }
+                { name = "path"; }    
+            ];
+        };
         vim.visuals = {
             nvim-web-devicons.enable = true;
             rainbow-delimiters.enable = true;
@@ -102,6 +109,11 @@
                 mappings.file3 = "<C-3>";
                 mappings.file4 = "<C-4>";
             };
+        };
+        vim.spellcheck = {
+            enable = true;
+            languages = [ "en_gb" ];
+            ignoredFiletypes = [ "nix" "oil" "cpp" ];
         };
       };
     };
