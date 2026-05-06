@@ -95,6 +95,12 @@
           rainbow-delimiters.enable = true;
         };
 
+        vim.formatter = {
+          conform-nvim = {
+            enable = true;
+          };
+        };
+
         vim.languages = {
           enableLSP = true;
           enableTreesitter = true;
@@ -103,6 +109,7 @@
             enable = true;
             format.enable = true;
           };
+
           clang.enable = true;
           markdown.enable = true;
 
