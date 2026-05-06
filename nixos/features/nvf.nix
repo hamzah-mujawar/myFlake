@@ -108,6 +108,17 @@
           nix = {
             enable = true;
             format.enable = true;
+            setupOpts = {
+                format_on_save = {
+                    lsp_fallback = true;
+                    timeout_ms = 500;
+                };
+            };
+            setupOpts.formatter_by_ft = {
+                nix = [
+                        "alejandra"
+                      ];
+            };
           };
 
           clang.enable = true;
