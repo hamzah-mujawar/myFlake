@@ -55,7 +55,11 @@
             {
               name = "fzf";
               packages = [pkgs.vimPlugins.telescope-fzf-native-nvim];
-              setup = {fzf = {fuzzy = true;};};
+              setup = {
+                fzf = {
+                  fuzzy = true;
+                };
+              };
             }
           ];
           mappings.buffers = "fb";
@@ -98,16 +102,6 @@
         vim.formatter = {
           conform-nvim = {
             enable = true;
-          };
-        };
-
-        vim.languages = {
-          enableLSP = true;
-          enableTreesitter = true;
-
-          nix = {
-            enable = true;
-            format.enable = true;
             setupOpts = {
                 format_on_save = {
                     lsp_fallback = true;
@@ -119,6 +113,16 @@
                         "alejandra"
                       ];
             };
+          };
+        };
+
+        vim.languages = {
+          enableLSP = true;
+          enableTreesitter = true;
+
+          nix = {
+            enable = true;
+            format.enable = true;
           };
 
           clang.enable = true;
@@ -147,7 +151,11 @@
         vim.spellcheck = {
           enable = true;
           languages = ["en_gb"];
-          ignoredFiletypes = ["nix" "oil" "cpp"];
+          ignoredFiletypes = [
+            "nix"
+            "oil"
+            "cpp"
+          ];
         };
       };
     };
