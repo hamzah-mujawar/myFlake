@@ -38,11 +38,13 @@
         #wrapped
         self'.packages.git
         self'.packages.bat
-        
+
         #C++
+        #TODO: Need to put all this into a nix shell
         pkgs.ccls
         pkgs.gdb
-	    pkgs.gnat
+        pkgs.gnat
+        pkgs.clang-tools
       ];
     };
   };
