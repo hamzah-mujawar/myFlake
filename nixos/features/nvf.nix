@@ -106,12 +106,22 @@
               format_on_save = {
                 lsp_fallback = false;
                 timeout_ms = 500;
+                lsp_format = "never";
               };
             };
             setupOpts.formatter_by_ft = {
               nix = [
                 "alejandra"
               ];
+              cpp = [
+                "ccls"
+              ];
+            };
+            setupOpts.formatters = {
+              ccls = {
+                command = "ccls";
+                stdin = true;
+              };
             };
           };
         };
