@@ -109,7 +109,7 @@
                 lsp_format = "never";
               };
             };
-            setupOpts.formatter_by_ft = {
+            setupOpts.formatters_by_ft = {
               nix = [
                 "alejandra"
               ];
