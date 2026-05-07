@@ -104,9 +104,8 @@
             enable = true;
             setupOpts = {
               format_on_save = {
-                lsp_fallback = false;
                 timeout_ms = 500;
-                lsp_format = "never";
+                lsp_format = "fallback";
               };
             };
             setupOpts.formatters_by_ft = {
@@ -114,14 +113,11 @@
                 "alejandra"
               ];
               cpp = [
-                "ccls"
+                "clang_format"
               ];
-            };
-            setupOpts.formatters = {
-              ccls = {
-                command = "ccls";
-                stdin = true;
-              };
+              c = [
+                "clang_format"
+              ];
             };
           };
         };
