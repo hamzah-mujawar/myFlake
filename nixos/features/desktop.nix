@@ -63,6 +63,7 @@
     };
 
     programs.gamescope.enable = true;
+    programs.gamemode.enable = true;
 
     programs.steam = {
       enable = true; # Master switch, already covered in installation
