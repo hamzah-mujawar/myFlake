@@ -90,7 +90,7 @@
             "build/"
             "target/"
             "result/"
-            "%.ccls-cache/"
+            ".ccls%-cache/"
           ];
         };
 
