@@ -68,6 +68,7 @@
       adwaita-icon-theme
       git
       qbittorrent
+      qtcreator
     ];
 
     # Some programs need SUID wrappers, can be configured further or are
