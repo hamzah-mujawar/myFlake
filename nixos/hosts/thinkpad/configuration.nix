@@ -68,6 +68,8 @@
       adwaita-icon-theme
       git
       qbittorrent
+      man-pages
+      man-pages-posix
     ];
 
     # Some programs need SUID wrappers, can be configured further or are
